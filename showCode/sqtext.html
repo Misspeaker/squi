@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>底部菜单栏</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<meta charset="utf-8" />
+<style>
+body {
+            background-color: antiquewhite;
+        }
+
+.b_menu_3 {
+    position: fixed;
+    height: 12mm;
+    width: 62.4mm;
+    bottom: 5mm;
+    left: 0cm;
+    right: 0cm;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 5mm;
+    opacity: 0.8;
+
+    /* display: none; */
+}
+.b_menu_3 > a > img {
+    height: 8mm;
+    width: 8mm;
+    margin: 2mm 6mm 2mm 6mm;
+}
+
+/* 分割线 */
+.b_menu_4 {
+    position: fixed;
+    height: 12mm;
+    width: 60mm;
+    bottom: 5mm;
+    left: 0cm;
+    right: 0cm;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 6mm;
+    opacity: 0.8;
+
+    display: none;
+}
+.b_menu_4 > a > img {
+    height: 8mm;
+    width: 8mm;
+    margin: 2mm 3mm 2mm 3mm;
+}
+@media screen and (min-width: 960px) {
+.b_menu_4 {
+    height: 14mm;
+    width: 68mm;
+    border-radius: 8mm;
+    padding: 0 3mm 0 3mm;
+
+    display: none;
+}
+.b_menu_4 > a > img {
+    height: 10mm;
+    width: 10mm;
+    margin: 2mm 3mm 2mm 3mm;
+}
+}
+/* 分割线 */
+.b_menu_5 {
+    position: fixed;
+    height: 10mm;
+    width: 77mm;
+    bottom: 0mm;
+    left: 0cm;
+    right: 0cm;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 0 1mm 1mm 1mm;
+    border-radius: 6mm 6mm 0 0;
+    opacity: 0.8;
+    transition: height 0.6s, opacity 0.6s;
+
+    display: none;
+}
+.b_menu_5:hover {
+    height: 12mm;
+    opacity: 1;
+}
+.b_menu_5 > a > img {
+    height: 8mm;
+    width: 8mm;
+    margin: 2mm 3mm 2mm 3mm;
+}
+@media screen and (min-width: 960px) {
+.b_menu_5 {
+    height: 12mm;
+    width: 87mm;
+
+    display: none;
+}
+.b_menu_5:hover {
+    height: 15mm;
+    opacity: 1;
+}
+.b_menu_5 > a > img {
+    height: 10mm;
+    width: 10mm;
+    margin: 2mm 3mm 2mm 3mm;
+}
+}
+
+</style>
+</head>
+<body>
+<div class="b_menu_3">
+    <a href="#"><img src="https://web.misspeak.top/svg/product.svg"/></a>
+    <a href="https://github.com/Misspeaker"><img src="https://avatars3.githubusercontent.com/u/47176940?s=60&u=f46bc56c1ea0f708e0c960032eb5605448b29b92&v=4"/></a>
+    <a href="https://github.com/Misspeaker/squi"><img src="https://web.misspeak.top/svg/link.svg"/></a>
+</div>
+
+<div class="b_menu_4">
+    <a href="#"><img src="https://web.misspeak.top/svg/all-fill.svg"/></a>
+    <a href="#"><img src="https://web.misspeak.top/svg/product.svg"/></a>
+    <a href="https://github.com/Misspeaker"><img src="https://avatars3.githubusercontent.com/u/47176940?s=60&u=f46bc56c1ea0f708e0c960032eb5605448b29b92&v=4"/></a>
+    <a href="https://github.com/Misspeaker/squi"><img src="https://web.misspeak.top/svg/link.svg"/></a>
+</div>
+
+<div class="b_menu_5">
+    <a href="#"><img src="https://web.misspeak.top/svg/all-fill.svg"/></a>
+    <a href="#"><img src="https://web.misspeak.top/svg/product.svg"/></a>
+    <a href="https://github.com/Misspeaker"><img src="https://avatars3.githubusercontent.com/u/47176940?s=60&u=f46bc56c1ea0f708e0c960032eb5605448b29b92&v=4"/></a>
+    <a href="https://github.com/Misspeaker/squi"><img src="https://web.misspeak.top/svg/link.svg"/></a>
+    <a href="#"><img src="https://web.misspeak.top/svg/New%20user%20zone.svg"/></a>
+</div>
+
+</body>
+</html>
