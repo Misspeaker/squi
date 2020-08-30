@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>顶部阅读目录栏</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<meta charset="utf-8" />
+<style>
+body {
+    background-color: snow;
+}
+
+#topMenu {
+    width: 10cm;
+    height: 2cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 4mm auto;
+    transition: top 1s;
+}
+#eye {
+    position: fixed;
+    top: 1mm;
+    right: 1mm;
+}
+
+.icon {
+    height: 15mm;
+    width: 15mm;
+    margin-right: 16mm;
+}
+
+@media(max-width:960px) {
+    #topMenu {
+        width: 66mm;
+        height: 12mm;
+        margin-top: 3mm;
+    }
+    .icon {
+    height: 12mm;
+    width: 12mm;
+    margin-right: 8mm;
+}
+}
+
+</style>
+<script>
+mode = 0
+function change() {
+    if(mode == 1) {
+        document.getElementById("topMenu").style.top="0";
+        mode = 0;
+    }
+    else {
+        document.getElementById("topMenu").style.top="-40mm";
+        mode = 1;
+    }
+}
+</script>
+</head>
+<body>
+<div id="topMenu">
+        <a href="#"><img class="icon" src="https://web.misspeak.top/svg/icon_last.svg"/></a>
+        <a href="#"><img class="icon" src="https://web.misspeak.top/svg/back_menu.svg"/></a>
+        <a href="#"><img class="icon" src="https://web.misspeak.top/svg/icon_next.svg"/></a>
+</div>
+<img class="icon" id="eye" src="https://web.misspeak.top/svg/eye.svg" onclick="change();"/>
+
+</body>
+</html>
